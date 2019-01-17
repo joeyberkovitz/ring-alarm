@@ -55,7 +55,7 @@ class Doorbot {
         options = options || {};
         this.username = options.username || options.email;
         this.password = options.password;
-        this.retries = options.retries || 0;
+        this.retries = options.retries || 5;
         this.timeout = options.timeout || (5 * 60 * 1000);
         this.counter = 0;
         this.userAgent = options.userAgent || 'android:com.ringapp:2.0.67(423)';
